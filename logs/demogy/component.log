@@ -1,0 +1,53 @@
+ERROR [2018-10-03 21:48:55] C:\work\gydemo\telecom-demo\blueking\component\base.py 94 _call 25540 58724 
+ 	 Component return error message: User authentication failed, please check if the bk_token is valid, request_id=de613b731e8d49ffab87aa2b4f334c2f, url=http://paas-poc.o.qcloud.com:80/api/c/compapi/v2/cc/search_host/, params=None, data={'ip': {'data': [], 'flag': 'bk_host_innerip|bk_host_outerip', 'exact': 1}, 'page': {'sort': 'bk_host_id', 'start': 0, 'limit': 5}, 'condition': [{'bk_obj_id': 'host', 'fields': [], 'condition': []}, {'bk_obj_id': 'module', 'fields': [], 'condition': []}, {'bk_obj_id': 'set', 'fields': [], 'condition': []}, {'bk_obj_id': 'biz', 'fields': ['default', 'bk_biz_id', 'bk_biz_name'], 'condition': [{'operator': '$eq', 'field': 'bk_biz_id', 'value': 2}]}]}, response={"message": "User authentication failed, please check if the bk_token is valid", "code": 1306000, "data": null, "result": false, "request_id": "de613b731e8d49ffab87aa2b4f334c2f"} 
+
+ERROR [2018-10-03 22:34:52] blueking\component\base.py 73 _call 2696 62624 
+ 	 Error occurred when requesting method=POST url=http://paas-poc.o.qcloud.com:80/api/c/compapi/v2/cc/search_host/ 
+Traceback (most recent call last):
+  File "blueking\component\base.py", line 70, in _call
+    resp = self.client.request(self.method, self.url, params=params, data=data)
+  File "blueking\component\client.py", line 100, in request
+    headers=headers, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/cc/search_host/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0485D390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 22:34:52] blueking\component\base.py 43 __call__ 2696 62624 
+ 	 Request component error, Exception: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/cc/search_host/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0485D390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+url=http://paas-poc.o.qcloud.com:80/api/c/compapi/v2/cc/search_host/ 
+Traceback (most recent call last):
+  File "blueking\component\base.py", line 35, in __call__
+    return self._call(*args, **kwargs)
+  File "blueking\component\base.py", line 74, in _call
+    raise ComponentAPIException(self, u'Request component error, Exception: %s' % str(e))
+ComponentAPIException: Request component error, Exception: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/cc/search_host/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0485D390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 22:42:50] blueking\component\base.py 73 _call 2696 62624 
+ 	 Error occurred when requesting method=POST url=http://paas-poc.o.qcloud.com:80/api/c/compapi/v2/cc/search_host/ 
+Traceback (most recent call last):
+  File "blueking\component\base.py", line 70, in _call
+    resp = self.client.request(self.method, self.url, params=params, data=data)
+  File "blueking\component\client.py", line 100, in request
+    headers=headers, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/cc/search_host/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x048EF2B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 22:42:50] blueking\component\base.py 43 __call__ 2696 62624 
+ 	 Request component error, Exception: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/cc/search_host/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x048EF2B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+url=http://paas-poc.o.qcloud.com:80/api/c/compapi/v2/cc/search_host/ 
+Traceback (most recent call last):
+  File "blueking\component\base.py", line 35, in __call__
+    return self._call(*args, **kwargs)
+  File "blueking\component\base.py", line 74, in _call
+    raise ComponentAPIException(self, u'Request component error, Exception: %s' % str(e))
+ComponentAPIException: Request component error, Exception: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /api/c/compapi/v2/cc/search_host/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x048EF2B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))

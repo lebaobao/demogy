@@ -1,0 +1,668 @@
+ERROR [2018-10-03 17:48:52] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 30920 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04643DB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 17:48:52] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 30920 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 17:49:00] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 62412 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046A7F30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 17:49:00] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 62412 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 17:53:11] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 51556 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0470E1B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 17:53:11] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 65472 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0470AE50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 17:53:11] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 51556 
+ 	 验证用户登录token无效： 
+
+INFO [2018-10-03 17:53:11] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 65472 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 17:53:23] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 53792 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=GdHPydG1XEh03PykK44uA_1h_MNywFar0Frit76hKaU (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0470EF30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 17:53:23] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 53792 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 17:56:09] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 53108 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': '5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04712970>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 17:56:09] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 53108 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 17:56:20] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 30692 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': '5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0470E030>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 17:56:20] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 27972 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': '5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0470E870>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 17:56:20] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 30692 
+ 	 验证用户登录token无效： 
+
+INFO [2018-10-03 17:56:20] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 27972 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 17:56:21] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 26196 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': '5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0470EC70>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 17:56:21] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 26196 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 18:00:17] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 3980 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': '5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0470EB30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 18:00:17] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 3980 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 18:00:39] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 38964 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': '5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=5HKVcZ8GiVu8yiWGJZKrQv_1JP2BmttuABy9GezKACs (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04712EB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 18:00:39] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 38964 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 21:48:47] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 32680 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'j1Tv7bGVA85CNopwGGhbmcB_u74q0zrZTb52BnHDOS8'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=j1Tv7bGVA85CNopwGGhbmcB_u74q0zrZTb52BnHDOS8 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x047C0D50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 21:48:47] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 32680 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 21:48:54] C:\work\gydemo\telecom-demo\account\accounts.py 95 get_bk_user_info 25540 58724 
+ 	 请求平台接口获取用户信息失败：login status has been logged out 
+
+ERROR [2018-10-03 21:58:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 63656 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'Aiv7_Hh6hm91qqadQE3HhAce45oNHMYm7dyPtNQxEnw'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=Aiv7_Hh6hm91qqadQE3HhAce45oNHMYm7dyPtNQxEnw (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x048A6690>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 21:58:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 63656 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 21:58:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25540 35264 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'Aiv7_Hh6hm91qqadQE3HhAce45oNHMYm7dyPtNQxEnw'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=Aiv7_Hh6hm91qqadQE3HhAce45oNHMYm7dyPtNQxEnw (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x048A6FB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 21:58:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25540 35264 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:14] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 21908 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046657D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:17:14] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 21908 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 35532 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046724D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 38360 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04680290>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 35532 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 14168 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04680AF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 38360 
+ 	 验证用户登录token无效： 
+
+INFO [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 14168 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 65264 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046B11B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 65264 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 37588 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046B1710>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 54560 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046B18D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 53516 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046B18B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 37588 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 48408 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046A64D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 54560 
+ 	 验证用户登录token无效： 
+
+INFO [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 53516 
+ 	 验证用户登录token无效： 
+
+INFO [2018-10-03 22:17:25] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 48408 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:26] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 9436 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0453A6F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:17:26] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 9436 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:31] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 63932 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04627CB0>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-03 22:17:31] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 63932 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:32] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 42012 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04638670>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-03 22:17:32] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 42012 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:17:34] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 18700 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=TiqfNkTRfTybZxxwTHbpl4ecWyQjOMYzDgb4kSW4VaE (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x046389F0>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-03 22:17:34] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 18700 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:20:56] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 7752 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'A94Zxla4-5X9xSlwBqiIs7pLbMgAejzTCZFFbjPtewo'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=A94Zxla4-5X9xSlwBqiIs7pLbMgAejzTCZFFbjPtewo (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x047B9690>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:20:56] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 7752 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:30:07] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 23212 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'HQsujuSlTPcomEI0_UVR0XoI008wzyErNkt3RDRIOWM'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=HQsujuSlTPcomEI0_UVR0XoI008wzyErNkt3RDRIOWM (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x047C1E90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:30:07] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 23212 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:30:18] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 37976 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'HQsujuSlTPcomEI0_UVR0XoI008wzyErNkt3RDRIOWM'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=HQsujuSlTPcomEI0_UVR0XoI008wzyErNkt3RDRIOWM (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x047C1AB0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:30:18] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 37976 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:45:27] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 31704 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'nbmYgo-Iqpc6geYGYX8gm6hi49mixqCUA4J8XplDvlg'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=nbmYgo-Iqpc6geYGYX8gm6hi49mixqCUA4J8XplDvlg (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x047D26D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:45:27] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 31704 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 22:45:38] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 54192 20824 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'nbmYgo-Iqpc6geYGYX8gm6hi49mixqCUA4J8XplDvlg'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=nbmYgo-Iqpc6geYGYX8gm6hi49mixqCUA4J8XplDvlg (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x047CAF90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 22:45:38] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 54192 20824 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 23:08:58] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 11684 38480 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'R5bL123KzetwbEWZJOp2UGEMzoVlF9F02MCjPYem5iQ'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=R5bL123KzetwbEWZJOp2UGEMzoVlF9F02MCjPYem5iQ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x043CFED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+ERROR [2018-10-03 23:08:58] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 11684 12996 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'R5bL123KzetwbEWZJOp2UGEMzoVlF9F02MCjPYem5iQ'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=R5bL123KzetwbEWZJOp2UGEMzoVlF9F02MCjPYem5iQ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x043F3D30>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 23:08:58] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 11684 38480 
+ 	 验证用户登录token无效： 
+
+INFO [2018-10-03 23:08:58] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 11684 12996 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-03 23:08:58] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 11684 16796 
+ 	 login http request error! type: GET, url: http://paas-poc.o.qcloud.com:80/login/accounts/is_login/, data: {'bk_token': 'R5bL123KzetwbEWZJOp2UGEMzoVlF9F02MCjPYem5iQ'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=R5bL123KzetwbEWZJOp2UGEMzoVlF9F02MCjPYem5iQ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04428130>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-03 23:08:58] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 11684 16796 
+ 	 验证用户登录token无效： 
+
