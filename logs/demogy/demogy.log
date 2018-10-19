@@ -666,3 +666,1095 @@ ConnectionError: HTTPConnectionPool(host='paas-poc.o.qcloud.com', port=80): Max 
 INFO [2018-10-03 23:08:58] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 11684 16796 
  	 验证用户登录token无效： 
 
+ERROR [2018-10-04 23:46:46] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 51420 43164 
+ 	 login http request error! type: GET, url: http://paas.blueking.com:80/login/accounts/is_login/, data: {'bk_token': 'AvMNhYALd0p6LWx--o3HICKR9FE25IAxXPmvq_U4vF4'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.blueking.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=AvMNhYALd0p6LWx--o3HICKR9FE25IAxXPmvq_U4vF4 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x04150A30>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-04 23:46:46] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 51420 43164 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-04 23:49:54] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 38060 63948 
+ 	 login http request error! type: GET, url: http://paas.blueking.com:80/login/accounts/is_login/, data: {'bk_token': 'AvMNhYALd0p6LWx--o3HICKR9FE25IAxXPmvq_U4vF4'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.blueking.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=AvMNhYALd0p6LWx--o3HICKR9FE25IAxXPmvq_U4vF4 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x042BE310>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-04 23:49:54] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 38060 63948 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-05 09:28:14] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 29648 62264 
+ 	 login http request error! type: GET, url: http://paas.blueking.com/login/accounts/is_login/, data: {'bk_token': 'NFeethER8EwaK98WrL7rInIMclK0jKcJiJ7ox1SWwZ8'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.blueking.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=NFeethER8EwaK98WrL7rInIMclK0jKcJiJ7ox1SWwZ8 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x03C51BB0>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-05 09:28:14] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 29648 62264 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-05 09:33:06] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 29648 10092 
+ 	 login http request error! type: GET, url: http://paas.blueking.com/login/accounts/is_login/, data: {'bk_token': 'NFeethER8EwaK98WrL7rInIMclK0jKcJiJ7ox1SWwZ8'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.blueking.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=NFeethER8EwaK98WrL7rInIMclK0jKcJiJ7ox1SWwZ8 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x03D375F0>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-05 09:33:06] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 29648 10092 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-05 15:08:07] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 34884 57092 
+ 	 login http request error! type: GET, url: http://paas.blueking.com/login/accounts/is_login/, data: {'bk_token': 'eilEaZcq_RBtwcBHywP8D8OBKFp_GNH9mE7AxyYZqi8'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 597, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 195, in resolve_redirects
+    **adapter_kwargs
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/?app_id=bk_cmdb&c_url=http://cmdb.bk.com:80//login/accounts/is_login/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0439F030>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-05 15:08:07] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 34884 57092 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-05 15:09:05] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 34884 45804 
+ 	 login http request error! type: GET, url: http://paas.blueking.com/login/accounts/is_login/, data: {'bk_token': 'eilEaZcq_RBtwcBHywP8D8OBKFp_GNH9mE7AxyYZqi8'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 597, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 195, in resolve_redirects
+    **adapter_kwargs
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/?app_id=bk_cmdb&c_url=http://cmdb.bk.com:80//login/accounts/is_login/ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x043FA470>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed',))
+INFO [2018-10-05 15:09:05] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 34884 45804 
+ 	 验证用户登录token无效： 
+
+INFO [2018-10-05 16:03:09] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 5572 8488 
+ 	 验证用户登录token无效：Record of bk_token [eilEaZcq_RBtwcBHywP8D8OBKFp_GNH9mE7AxyYZqi8] does not exist 
+
+INFO [2018-10-05 16:10:59] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 10364 11848 
+ 	 验证用户登录token无效：Record of bk_token [eilEaZcq_RBtwcBHywP8D8OBKFp_GNH9mE7AxyYZqi8] does not exist 
+
+INFO [2018-10-05 16:11:43] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 10364 5612 
+ 	 验证用户登录token无效：Record of bk_token [eilEaZcq_RBtwcBHywP8D8OBKFp_GNH9mE7AxyYZqi8] does not exist 
+
+ERROR [2018-10-09 22:59:22] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 14948 16648 
+ 	 login http request error! type: GET, url: http://paas.bk.com:80/login/accounts/is_login/, data: {'bk_token': 'rA2RMYgmf5et_FGG5hQnR1dkAZQ7uYjOgyYn-mJnrzQ'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=rA2RMYgmf5et_FGG5hQnR1dkAZQ7uYjOgyYn-mJnrzQ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x047CD770>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-09 22:59:22] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 14948 16648 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-09 22:59:41] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 14948 13776 
+ 	 login http request error! type: GET, url: http://paas.bk.com:80/login/accounts/is_login/, data: {'bk_token': 'rA2RMYgmf5et_FGG5hQnR1dkAZQ7uYjOgyYn-mJnrzQ'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=rA2RMYgmf5et_FGG5hQnR1dkAZQ7uYjOgyYn-mJnrzQ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x047CDF50>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-09 22:59:41] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 14948 13776 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-09 22:59:45] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 14948 5284 
+ 	 login http request error! type: GET, url: http://paas.bk.com:80/login/accounts/is_login/, data: {'bk_token': 'rA2RMYgmf5et_FGG5hQnR1dkAZQ7uYjOgyYn-mJnrzQ'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=rA2RMYgmf5et_FGG5hQnR1dkAZQ7uYjOgyYn-mJnrzQ (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x048AF0D0>: Failed to establish a new connection: [Errno 10053] ',))
+INFO [2018-10-09 22:59:45] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 14948 5284 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-10 00:07:14] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 6644 7788 
+ 	 save_data 4 
+
+ERROR [2018-10-10 00:08:59] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 8752 6012 
+ 	 save_data 4 
+
+ERROR [2018-10-10 00:11:33] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 10112 13220 
+ 	 save_data 4 
+
+ERROR [2018-10-16 15:36:31] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25552 22632 
+ 	 login http request error! type: GET, url: http://paas.bk.com:80/login/accounts/is_login/, data: {'bk_token': '-HL4yPwSiWyD1rshy6cBgqxKVG2yCeQcH8Yerjgedqc'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=-HL4yPwSiWyD1rshy6cBgqxKVG2yCeQcH8Yerjgedqc (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0428BE90>: Failed to establish a new connection: [Errno 10060] ',))
+ERROR [2018-10-16 15:36:31] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25552 23484 
+ 	 login http request error! type: GET, url: http://paas.bk.com:80/login/accounts/is_login/, data: {'bk_token': '-HL4yPwSiWyD1rshy6cBgqxKVG2yCeQcH8Yerjgedqc'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=-HL4yPwSiWyD1rshy6cBgqxKVG2yCeQcH8Yerjgedqc (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0428BC90>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-16 15:36:31] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25552 22632 
+ 	 验证用户登录token无效： 
+
+INFO [2018-10-16 15:36:31] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25552 23484 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-16 15:36:41] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25552 21724 
+ 	 login http request error! type: GET, url: http://paas.bk.com:80/login/accounts/is_login/, data: {'bk_token': '-HL4yPwSiWyD1rshy6cBgqxKVG2yCeQcH8Yerjgedqc'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=-HL4yPwSiWyD1rshy6cBgqxKVG2yCeQcH8Yerjgedqc (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x042A5090>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-16 15:36:41] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25552 21724 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-16 15:36:42] C:\work\gydemo\telecom-demo\account\http.py 42 _http_request 25552 14748 
+ 	 login http request error! type: GET, url: http://paas.bk.com:80/login/accounts/is_login/, data: {'bk_token': '-HL4yPwSiWyD1rshy6cBgqxKVG2yCeQcH8Yerjgedqc'} 
+Traceback (most recent call last):
+  File "C:\work\gydemo\telecom-demo\account\http.py", line 30, in _http_request
+    resp = requests.get(url=url, headers=headers, params=data)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 67, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\api.py", line 53, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 468, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\sessions.py", line 576, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\work\lanjing\venv\lib\site-packages\requests\adapters.py", line 437, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='paas.bk.com', port=80): Max retries exceeded with url: /login/accounts/is_login/?bk_token=-HL4yPwSiWyD1rshy6cBgqxKVG2yCeQcH8Yerjgedqc (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x042A5E70>: Failed to establish a new connection: [Errno 10060] ',))
+INFO [2018-10-16 15:36:42] C:\work\gydemo\telecom-demo\account\accounts.py 83 verify_bk_login 25552 14748 
+ 	 验证用户登录token无效： 
+
+ERROR [2018-10-16 15:37:05] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25552 22744 
+ 	 save_data 4 
+
+ERROR [2018-10-16 15:37:13] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25552 24516 
+ 	 save_data 4 
+
+ERROR [2018-10-16 15:37:19] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25552 13120 
+ 	 save_data 4 
+
+ERROR [2018-10-16 16:06:20] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25364 5376 
+ 	 save_data 4 
+
+ERROR [2018-10-16 16:06:25] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25364 25256 
+ 	 save_data 4 
+
+ERROR [2018-10-16 16:06:32] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25364 27088 
+ 	 save_data 4 
+
+ERROR [2018-10-16 16:06:42] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25364 7876 
+ 	 save_data 4 
+
+ERROR [2018-10-16 16:06:49] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25364 25556 
+ 	 save_data 4 
+
+ERROR [2018-10-16 16:06:50] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 25364 25240 
+ 	 save_data 4 
+
+ERROR [2018-10-16 16:16:10] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 6348 22760 
+ 	 save_data 'dict' object has no attribute 'ip' 
+
+ERROR [2018-10-16 20:01:05] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 25 save_data 27100 22812 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-16 20:18:01] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 26688 22932 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-16 20:18:45] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 26688 17676 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-16 20:29:54] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 27064 23652 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-16 20:30:54] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 27064 23652 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-16 20:52:45] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 27608 26088 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-16 20:52:52] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 27608 26088 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-17 09:51:45] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 9532 24904 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-17 10:14:49] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 25468 25880 
+ 	 save_data 'check_data' 
+
+ERROR [2018-10-17 10:16:49] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 22464 17360 
+ 	 save_data 'checkdata' 
+
+ERROR [2018-10-17 10:20:37] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 19860 27560 
+ 	 save_data 'createtime' is an invalid keyword argument for this function 
+
+ERROR [2018-10-17 10:20:40] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 19860 25792 
+ 	 save_data 'createtime' is an invalid keyword argument for this function 
+
+ERROR [2018-10-17 10:20:42] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 19860 24352 
+ 	 save_data 'createtime' is an invalid keyword argument for this function 
+
+ERROR [2018-10-17 10:24:10] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 26 save_data 22948 22836 
+ 	 save_data 'createtime' is an invalid keyword argument for this function 
+
+ERROR [2018-10-17 11:00:59] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 27288 20428 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:00:59] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:00:59] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:00:59] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22800 25108 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:19] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:19] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 27288 20428 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:19] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22800 25108 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:19] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:39] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:39] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 27288 20428 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:39] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22800 25108 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:39] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:59] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:59] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22800 25108 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:59] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 27288 20428 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:01:59] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：01:02 
+
+ERROR [2018-10-17 11:03:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:03:01.320000 
+
+ERROR [2018-10-17 11:04:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22800 25108 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:04:01.361000 
+
+ERROR [2018-10-17 11:05:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 27288 20428 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 11:05:00.013000 
+
+ERROR [2018-10-17 11:05:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 27288 20428 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 11:05:00.046000 
+
+ERROR [2018-10-17 11:05:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:05:01.386000 
+
+ERROR [2018-10-17 11:06:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22800 25108 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:06:01.487000 
+
+ERROR [2018-10-17 11:06:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：11:05 
+
+ERROR [2018-10-17 11:07:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:07:01.255000 
+
+ERROR [2018-10-17 11:08:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:08:01.354000 
+
+ERROR [2018-10-17 11:09:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22800 25108 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:09:01.325000 
+
+ERROR [2018-10-17 11:10:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 27288 20428 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 11:10:00.145000 
+
+ERROR [2018-10-17 11:10:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 27288 20428 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 11:10:00.146000 
+
+ERROR [2018-10-17 11:10:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:10:01.281000 
+
+ERROR [2018-10-17 11:11:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:11:01.320000 
+
+ERROR [2018-10-17 11:11:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22800 25108 
+ 	 celery 定时任务执行成功，执行结果：11:10 
+
+ERROR [2018-10-17 11:12:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:12:01.344000 
+
+ERROR [2018-10-17 11:13:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:13:01.274000 
+
+ERROR [2018-10-17 11:14:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:14:01.452000 
+
+ERROR [2018-10-17 11:15:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 27288 20428 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 11:15:00.018000 
+
+ERROR [2018-10-17 11:15:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 27288 20428 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 11:15:00.020000 
+
+ERROR [2018-10-17 11:15:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22800 25108 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:15:01.274000 
+
+ERROR [2018-10-17 11:16:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:16:01.286000 
+
+ERROR [2018-10-17 11:16:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：11:15 
+
+ERROR [2018-10-17 11:17:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:17:01.416000 
+
+ERROR [2018-10-17 11:18:03] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22800 25108 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:18:03.411000 
+
+ERROR [2018-10-17 11:19:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:19:01.446000 
+
+ERROR [2018-10-17 11:20:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 27288 20428 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 11:20:00.012000 
+
+ERROR [2018-10-17 11:20:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 27288 20428 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 11:20:00.014000 
+
+ERROR [2018-10-17 11:20:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:20:01.284000 
+
+ERROR [2018-10-17 11:21:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22800 25108 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:21:01.316000 
+
+ERROR [2018-10-17 11:21:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：11:20 
+
+ERROR [2018-10-17 11:22:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:22:01.369000 
+
+ERROR [2018-10-17 11:23:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:23:01.343000 
+
+ERROR [2018-10-17 11:24:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22800 25108 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:24:01.245000 
+
+ERROR [2018-10-17 11:25:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 27288 20428 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 11:25:00.014000 
+
+ERROR [2018-10-17 11:25:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 27288 20428 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 11:25:00.016000 
+
+ERROR [2018-10-17 11:25:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:25:01.289000 
+
+ERROR [2018-10-17 11:26:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:26:01.329000 
+
+ERROR [2018-10-17 11:26:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22800 25108 
+ 	 celery 定时任务执行成功，执行结果：11:25 
+
+ERROR [2018-10-17 11:27:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:27:01.373000 
+
+ERROR [2018-10-17 11:28:02] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:28:02.049000 
+
+ERROR [2018-10-17 11:29:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 11:29:01.348000 
+
+ERROR [2018-10-17 12:54:34] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 27288 20428 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 12:54:34.309000 
+
+ERROR [2018-10-17 12:54:34] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 27288 20428 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 12:54:34.375000 
+
+ERROR [2018-10-17 12:55:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 12:55:00.010000 
+
+ERROR [2018-10-17 12:55:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 12:55:00.791000 
+
+ERROR [2018-10-17 12:55:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 12:55:01.358000 
+
+ERROR [2018-10-17 12:55:54] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 27288 20428 
+ 	 celery 定时任务执行成功，执行结果：12:54 
+
+ERROR [2018-10-17 12:56:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 12:56:01.440000 
+
+ERROR [2018-10-17 12:56:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：12:55 
+
+ERROR [2018-10-17 12:57:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 12:57:01.365000 
+
+ERROR [2018-10-17 12:58:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 12:58:01.355000 
+
+ERROR [2018-10-17 12:59:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 12:59:01.316000 
+
+ERROR [2018-10-17 13:00:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 22084 21500 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:00:00.080000 
+
+ERROR [2018-10-17 13:00:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 22084 21500 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:00:00.344000 
+
+ERROR [2018-10-17 13:00:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:00:01.439000 
+
+ERROR [2018-10-17 13:01:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:01:01.308000 
+
+ERROR [2018-10-17 13:01:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：13:00 
+
+ERROR [2018-10-17 13:02:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:02:01.370000 
+
+ERROR [2018-10-17 13:03:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:03:01.489000 
+
+ERROR [2018-10-17 13:04:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:04:01.399000 
+
+ERROR [2018-10-17 13:05:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:05:00.015000 
+
+ERROR [2018-10-17 13:05:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:05:00.017000 
+
+ERROR [2018-10-17 13:05:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:05:01.379000 
+
+ERROR [2018-10-17 13:06:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:06:01.396000 
+
+ERROR [2018-10-17 13:06:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：13:05 
+
+ERROR [2018-10-17 13:07:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:07:01.364000 
+
+ERROR [2018-10-17 13:08:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:08:01.441000 
+
+ERROR [2018-10-17 13:09:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:09:01.355000 
+
+ERROR [2018-10-17 13:10:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 22084 21500 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:10:00.057000 
+
+ERROR [2018-10-17 13:10:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 22084 21500 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:10:00.059000 
+
+ERROR [2018-10-17 13:10:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:10:01.615000 
+
+ERROR [2018-10-17 13:11:03] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:11:03.044000 
+
+ERROR [2018-10-17 13:11:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：13:10 
+
+ERROR [2018-10-17 13:12:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:12:01.447000 
+
+ERROR [2018-10-17 13:13:04] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:13:04.424000 
+
+ERROR [2018-10-17 13:14:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:14:01.400000 
+
+ERROR [2018-10-17 13:15:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:15:00.020000 
+
+ERROR [2018-10-17 13:15:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:15:00.022000 
+
+ERROR [2018-10-17 13:15:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:15:01.976000 
+
+ERROR [2018-10-17 13:16:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:16:01.394000 
+
+ERROR [2018-10-17 13:16:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：13:15 
+
+ERROR [2018-10-17 13:17:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:17:01.288000 
+
+ERROR [2018-10-17 13:18:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:18:01.272000 
+
+ERROR [2018-10-17 13:19:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:19:01.375000 
+
+ERROR [2018-10-17 13:20:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 22084 21500 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:20:00.026000 
+
+ERROR [2018-10-17 13:20:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 22084 21500 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:20:00.028000 
+
+ERROR [2018-10-17 13:20:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:20:01.274000 
+
+ERROR [2018-10-17 13:21:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:21:01.382000 
+
+ERROR [2018-10-17 13:21:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：13:20 
+
+ERROR [2018-10-17 13:22:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:22:01.337000 
+
+ERROR [2018-10-17 13:23:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:23:01.458000 
+
+ERROR [2018-10-17 13:24:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:24:01.322000 
+
+ERROR [2018-10-17 13:25:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:25:00.036000 
+
+ERROR [2018-10-17 13:25:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:25:00.038000 
+
+ERROR [2018-10-17 13:25:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:25:01.401000 
+
+ERROR [2018-10-17 13:26:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:26:01.334000 
+
+ERROR [2018-10-17 13:26:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：13:25 
+
+ERROR [2018-10-17 13:27:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:27:01.340000 
+
+ERROR [2018-10-17 13:28:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:28:01.363000 
+
+ERROR [2018-10-17 13:29:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:29:01.395000 
+
+ERROR [2018-10-17 13:30:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 22084 21500 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:30:00.093000 
+
+ERROR [2018-10-17 13:30:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 22084 21500 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:30:00.105000 
+
+ERROR [2018-10-17 13:30:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:30:01.366000 
+
+ERROR [2018-10-17 13:31:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:31:01.361000 
+
+ERROR [2018-10-17 13:31:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：13:30 
+
+ERROR [2018-10-17 13:32:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:32:01.339000 
+
+ERROR [2018-10-17 13:33:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:33:01.378000 
+
+ERROR [2018-10-17 13:34:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:34:01.426000 
+
+ERROR [2018-10-17 13:35:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:35:00.026000 
+
+ERROR [2018-10-17 13:35:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:35:00.028000 
+
+ERROR [2018-10-17 13:35:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:35:01.347000 
+
+ERROR [2018-10-17 13:36:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:36:01.422000 
+
+ERROR [2018-10-17 13:36:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：13:35 
+
+ERROR [2018-10-17 13:37:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:37:01.424000 
+
+ERROR [2018-10-17 13:38:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:38:01.329000 
+
+ERROR [2018-10-17 13:39:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:39:01.350000 
+
+ERROR [2018-10-17 13:40:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 22084 21500 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:40:00.031000 
+
+ERROR [2018-10-17 13:40:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 22084 21500 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:40:00.033000 
+
+ERROR [2018-10-17 13:40:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:40:01.413000 
+
+ERROR [2018-10-17 13:41:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:41:01.377000 
+
+ERROR [2018-10-17 13:41:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：13:40 
+
+ERROR [2018-10-17 13:42:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 27288 20428 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:42:01.527000 
+
+ERROR [2018-10-17 13:43:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:43:01.535000 
+
+ERROR [2018-10-17 13:44:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 13:44:01.473000 
+
+ERROR [2018-10-17 13:45:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 13:45:00.037000 
+
+ERROR [2018-10-17 13:45:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 13:45:00.039000 
+
+ERROR [2018-10-17 14:14:14] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 14:14:14.952000 
+
+ERROR [2018-10-17 14:14:14] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 14:14:14.999000 
+
+ERROR [2018-10-17 14:14:15] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 14:14:15.014000 
+
+ERROR [2018-10-17 14:14:23] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：13:45 
+
+ERROR [2018-10-17 14:15:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 22084 21500 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 14:15:00.016000 
+
+ERROR [2018-10-17 14:15:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 22084 21500 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 14:15:00.025000 
+
+ERROR [2018-10-17 14:15:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 14:15:01.304000 
+
+ERROR [2018-10-17 14:15:34] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：14:14 
+
+ERROR [2018-10-17 14:16:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 14:16:01.336000 
+
+ERROR [2018-10-17 14:16:20] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26312 27328 
+ 	 celery 定时任务执行成功，执行结果：14:15 
+
+ERROR [2018-10-17 14:22:29] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 14:22:29.996000 
+
+ERROR [2018-10-17 14:22:30] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 14:22:30.012000 
+
+ERROR [2018-10-17 14:22:30] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 14:22:30.822000 
+
+ERROR [2018-10-17 14:23:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 14:23:01.286000 
+
+ERROR [2018-10-17 14:23:49] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 22084 21500 
+ 	 celery 定时任务执行成功，执行结果：14:22 
+
+ERROR [2018-10-17 14:24:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26312 27328 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 14:24:01.312000 
+
+ERROR [2018-10-17 14:25:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26312 27328 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 14:25:00.054000 
+
+ERROR [2018-10-17 14:25:00] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26312 27328 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 14:25:00.056000 
+
+ERROR [2018-10-17 14:25:01] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 22084 21500 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 14:25:01.400000 
+
+ERROR [2018-10-17 17:43:54] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 13556 15260 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-17 19:58:33] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:33.872000 
+
+ERROR [2018-10-17 19:58:33] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 25632 26152 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:33.882000 
+
+ERROR [2018-10-17 19:58:33] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:33.924000 
+
+ERROR [2018-10-17 19:58:33] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 20848 24532 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 19:58:33.934000 
+
+ERROR [2018-10-17 19:58:34] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 20848 24532 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 19:58:34.216000 
+
+ERROR [2018-10-17 19:58:34] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:34.880000 
+
+ERROR [2018-10-17 19:58:37] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:37.891000 
+
+ERROR [2018-10-17 19:58:38] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:38.094000 
+
+ERROR [2018-10-17 19:58:38] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:38.779000 
+
+ERROR [2018-10-17 19:58:42] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:42.039000 
+
+ERROR [2018-10-17 19:58:42] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:42.067000 
+
+ERROR [2018-10-17 19:58:42] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 20848 24532 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 19:58:42.068000 
+
+ERROR [2018-10-17 19:58:42] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 20848 24532 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 19:58:42.072000 
+
+ERROR [2018-10-17 19:58:42] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:42.841000 
+
+ERROR [2018-10-17 19:58:45] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:45.948000 
+
+ERROR [2018-10-17 19:58:46] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:46.103000 
+
+ERROR [2018-10-17 19:58:46] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:46.876000 
+
+ERROR [2018-10-17 19:58:46] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26952 22892 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 19:58:46.883000 
+
+ERROR [2018-10-17 19:58:46] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26952 22892 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 19:58:46.918000 
+
+ERROR [2018-10-17 19:58:50] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:50.092000 
+
+ERROR [2018-10-17 19:58:50] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:50.279000 
+
+ERROR [2018-10-17 19:58:50] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:50.974000 
+
+ERROR [2018-10-17 19:58:53] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 25632 26152 
+ 	 celery 定时任务执行成功，执行结果：14:25 
+
+ERROR [2018-10-17 19:58:54] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:54.520000 
+
+ERROR [2018-10-17 19:58:54] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 20848 24532 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 19:58:54.544000 
+
+ERROR [2018-10-17 19:58:54] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 20848 24532 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 19:58:54.546000 
+
+ERROR [2018-10-17 19:58:54] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:54.952000 
+
+ERROR [2018-10-17 19:58:55] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:55.205000 
+
+ERROR [2018-10-17 19:58:57] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 25632 26152 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:57.962000 
+
+ERROR [2018-10-17 19:58:58] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:58.597000 
+
+ERROR [2018-10-17 19:58:58] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:58.947000 
+
+ERROR [2018-10-17 19:58:58] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 26952 22892 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 19:58:58.981000 
+
+ERROR [2018-10-17 19:58:58] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 26952 22892 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 19:58:58.993000 
+
+ERROR [2018-10-17 19:58:59] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:58:59.162000 
+
+ERROR [2018-10-17 19:59:02] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 25632 26152 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:02.550000 
+
+ERROR [2018-10-17 19:59:04] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:04.040000 
+
+ERROR [2018-10-17 19:59:05] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:05.246000 
+
+ERROR [2018-10-17 19:59:05] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:05.568000 
+
+ERROR [2018-10-17 19:59:05] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 23852 23980 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 19:59:05.582000 
+
+ERROR [2018-10-17 19:59:05] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 23852 23980 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 19:59:05.611000 
+
+ERROR [2018-10-17 19:59:07] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 25632 26152 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:07.016000 
+
+ERROR [2018-10-17 19:59:08] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:08.007000 
+
+ERROR [2018-10-17 19:59:09] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:09.261000 
+
+ERROR [2018-10-17 19:59:09] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:09.603000 
+
+ERROR [2018-10-17 19:59:10] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 25632 26152 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:10.957000 
+
+ERROR [2018-10-17 19:59:11] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 25632 26152 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 19:59:11.121000 
+
+ERROR [2018-10-17 19:59:11] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 25632 26152 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 19:59:11.165000 
+
+ERROR [2018-10-17 19:59:12] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:12.269000 
+
+ERROR [2018-10-17 19:59:13] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:13.203000 
+
+ERROR [2018-10-17 19:59:13] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:13.692000 
+
+ERROR [2018-10-17 19:59:15] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 25632 26152 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:15.549000 
+
+ERROR [2018-10-17 19:59:16] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 20848 24532 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:16.434000 
+
+ERROR [2018-10-17 19:59:16] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 39 execute_task 20848 24532 
+ 	 celery 定时任务启动，将在60s后执行，当前时间：2018-10-17 19:59:16.454000 
+
+ERROR [2018-10-17 19:59:16] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 54 get_time 20848 24532 
+ 	 celery 周期任务调用成功，当前时间：2018-10-17 19:59:16.456000 
+
+ERROR [2018-10-17 19:59:17] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 26952 22892 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:17.083000 
+
+ERROR [2018-10-17 19:59:17] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 23852 23980 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:17.676000 
+
+ERROR [2018-10-17 19:59:20] C:\work\gydemo\telecom-demo\GetHostStatus\celery_tasks.py 44 get_time 25632 26152 
+ 	 get cpu celery 周期任务调用成功，当前时间：2018-10-17 19:59:20.572000 
+
+ERROR [2018-10-17 19:59:53] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 20848 24532 
+ 	 celery 定时任务执行成功，执行结果：19:58 
+
+ERROR [2018-10-17 20:00:02] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26952 22892 
+ 	 celery 定时任务执行成功，执行结果：19:58 
+
+ERROR [2018-10-17 20:00:06] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 23852 23980 
+ 	 celery 定时任务执行成功，执行结果：19:58 
+
+ERROR [2018-10-17 20:00:14] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 25632 26152 
+ 	 celery 定时任务执行成功，执行结果：19:58 
+
+ERROR [2018-10-17 20:00:18] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 20848 24532 
+ 	 celery 定时任务执行成功，执行结果：19:58 
+
+ERROR [2018-10-17 20:00:25] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 26952 22892 
+ 	 celery 定时任务执行成功，执行结果：19:59 
+
+ERROR [2018-10-17 20:00:31] C:\work\gydemo\telecom-demo\home_application\celery_tasks.py 23 async_task 23852 23980 
+ 	 celery 定时任务执行成功，执行结果：19:59 
+
+ERROR [2018-10-18 22:52:39] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 104 save_data 13432 12444 
+ 	 save_data global name 'history' is not defined 
+
+ERROR [2018-10-18 22:56:21] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 104 save_data 13864 10512 
+ 	 save_data global name 'history' is not defined 
+
+ERROR [2018-10-18 23:05:35] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 104 save_data 12776 5480 
+ 	 save_data 'operater' 
+
+ERROR [2018-10-18 23:23:21] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 10616 14076 
+ 	 save_data 'operater' 
+
+ERROR [2018-10-18 23:27:54] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 14316 13864 
+ 	 save_data 'createime' is an invalid keyword argument for this function 
+
+ERROR [2018-10-18 23:29:59] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 5948 13028 
+ 	 save_data 'createime' is an invalid keyword argument for this function 
+
+ERROR [2018-10-18 23:31:07] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 14180 13888 
+ 	 save_data 'createime' is an invalid keyword argument for this function 
+
+ERROR [2018-10-19 00:04:45] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 5952 13852 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:04:45] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 5952 13852 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:04:51] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 5952 11044 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:07:33] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 1648 10348 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:07:33] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 1648 10348 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:09:27] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 13420 12228 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:09:27] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 13420 12228 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:11:21] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 6424 12560 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:11:24] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 6424 11716 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:11:24] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 6424 11716 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:12:14] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 6424 1132 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:12:14] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 6424 1132 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:13:30] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 103 save_data 13004 4808 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:13:30] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 13004 4808 
+ 	 save_data column ip is not unique 
+
+ERROR [2018-10-19 00:16:34] C:\work\gydemo\telecom-demo\GetHostStatus\models.py 68 save_data 13540 7376 
+ 	 save_data column ip is not unique 
+

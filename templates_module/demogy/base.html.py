@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1538404054.045
+_modified_time = 1538703307.319
 _enable_loop = True
 _template_filename = u'C:/work/gydemo/telecom-demo/templates/base.html'
 _template_uri = u'/base.html'
@@ -88,7 +88,7 @@ def render_body(context,**pageargs):
 
         __M_writer(u'\r\n        <ul class="links ft">\r\n            <li>\r\n                <a id="contact_us" class="link">QQ\u54a8\u8be2(800802001)</a>\r\n                | <a href="http://bbs.bk.tencent.com/forum.php" target="_blank" hotrep="hp.footer.feedback" class="link">\u84dd\u9cb8\u8bba\u575b</a>\r\n                | <a href="http://bk.tencent.com/" target="_blank" hotrep="hp.footer.feedback" class="link">\u84dd\u9cb8\u5b98\u7f51</a>\r\n                | <a href="')
         __M_writer(unicode(BK_PLAT_HOST))
-        __M_writer(u'/console/" target="_blank" hotrep="hp.footer.feedback" class="link">\u84dd\u9cb8\u667a\u4e91\u684c\u9762</a>\r\n            </li>\r\n            <li><p class="copyright">Copyright \xa9 2012-')
+        __M_writer(u'" target="_blank" hotrep="hp.footer.feedback" class="link">\u84dd\u9cb8\u667a\u4e91\u5de5\u4f5c\u53f0</a>\r\n            </li>\r\n            <li><p class="copyright">Copyright \xa9 2012-')
         __M_writer(unicode(NOW.year))
         __M_writer(u' Tencent BlueKing. All Rights Reserved.</p> </li>\r\n          <li><p class="copyright">\u84dd\u9cb8\u667a\u4e91 \u7248\u6743\u6240\u6709</p> </li>\r\n        </ul>\r\n      </div>\r\n      <!-- \u5c3e\u90e8\u58f0\u660e start -->\r\n    <!-- jquery js  -->\r\n    <script src="')
         __M_writer(unicode(STATIC_URL))
@@ -99,10 +99,6 @@ def render_body(context,**pageargs):
         __M_writer(u'assets/bootstrap-3.3.4/js/bootstrap.min.js" type="text/javascript"></script>\r\n    <!--\u914d\u7f6ejs  \u52ff\u5220-->\r\n    <script src="')
         __M_writer(unicode(STATIC_URL))
         __M_writer(u'js/settings.js?v=')
-        __M_writer(unicode(STATIC_VERSION))
-        __M_writer(u'" type="text/javascript"></script>\r\n    <!-- app\u4f7f\u7528\u6570\u636e\u7edf\u8ba1\u4e0a\u62a5\u811a\u672c -->\r\n    <script src="')
-        __M_writer(unicode(BK_PLAT_HOST))
-        __M_writer(u'/console/static/js/analysis.min.js?v=')
         __M_writer(unicode(STATIC_VERSION))
         __M_writer(u'" type="text/javascript"></script>\r\n    ')
         __M_writer(unicode(self.body()))
@@ -144,7 +140,7 @@ def render_head(context,**pageargs):
         STATIC_URL = context.get('STATIC_URL', UNDEFINED)
         SITE_URL = context.get('SITE_URL', UNDEFINED)
         __M_writer = context.writer()
-        __M_writer(u'\r\n        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\r\n        <title>\u5f00\u53d1\u6846\u67b6|\u84dd\u9cb8\u667a\u4e91\u4f01\u4e1a\u7248</title>\r\n        <meta name="description" content=""/>\r\n        <meta name="author" content=""/>\r\n        <link rel="shortcut icon" href="')
+        __M_writer(u'\r\n        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\r\n        <title>\u5f00\u53d1\u6846\u67b6|\u84dd\u9cb8\u667a\u4e91\u793e\u533a\u7248</title>\r\n        <meta name="description" content=""/>\r\n        <meta name="author" content=""/>\r\n        <link rel="shortcut icon" href="')
         __M_writer(unicode(STATIC_URL))
         __M_writer(u'favicon.ico" type="image/x-icon">\r\n        <!-- bootstrap css -->\r\n\t\t    <link href="')
         __M_writer(unicode(STATIC_URL))
@@ -172,6 +168,6 @@ def render_head(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "line_map": {"137": 4, "173": 167, "16": 0, "147": 4, "148": 9, "149": 9, "150": 11, "151": 11, "152": 13, "153": 13, "154": 15, "155": 15, "156": 15, "157": 15, "158": 16, "159": 16, "160": 16, "161": 16, "162": 19, "163": 19, "164": 20, "37": 1, "166": 21, "167": 21, "42": 23, "43": 31, "44": 31, "45": 37, "58": 46, "59": 47, "60": 47, "61": 47, "62": 47, "63": 48, "64": 48, "65": 48, "66": 48, "67": 49, "68": 49, "69": 49, "70": 49, "71": 53, "72": 53, "73": 54, "74": 55, "75": 57, "76": 57, "77": 57, "78": 60, "79": 60, "84": 67, "89": 71, "90": 77, "91": 77, "92": 79, "93": 79, "94": 85, "95": 85, "96": 86, "97": 86, "98": 88, "99": 88, "100": 90, "101": 90, "102": 90, "103": 90, "104": 92, "105": 92, "106": 92, "107": 92, "108": 93, "109": 93, "115": 67, "126": 71, "165": 20}, "uri": "/base.html", "filename": "C:/work/gydemo/telecom-demo/templates/base.html"}
+{"source_encoding": "utf-8", "line_map": {"133": 4, "143": 4, "16": 0, "145": 9, "146": 11, "147": 11, "148": 13, "149": 13, "150": 15, "151": 15, "152": 15, "153": 15, "154": 16, "155": 16, "156": 16, "157": 16, "158": 19, "159": 19, "160": 20, "161": 20, "162": 21, "163": 21, "37": 1, "169": 163, "42": 23, "43": 31, "44": 31, "45": 37, "58": 46, "59": 47, "60": 47, "61": 47, "62": 47, "63": 48, "64": 48, "65": 48, "66": 48, "67": 49, "68": 49, "69": 49, "70": 49, "71": 53, "72": 53, "73": 54, "74": 55, "75": 57, "76": 57, "77": 57, "78": 60, "79": 60, "84": 67, "89": 71, "90": 77, "91": 77, "92": 79, "93": 79, "94": 85, "95": 85, "96": 86, "97": 86, "98": 88, "99": 88, "100": 90, "101": 90, "102": 90, "103": 90, "104": 91, "105": 91, "144": 9, "111": 67, "122": 71}, "uri": "/base.html", "filename": "C:/work/gydemo/telecom-demo/templates/base.html"}
 __M_END_METADATA
 """
